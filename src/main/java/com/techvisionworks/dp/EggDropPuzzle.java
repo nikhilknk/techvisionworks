@@ -13,8 +13,8 @@ public class EggDropPuzzle {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int floors= 6;
-		int eggs = 2;
+		int floors= 100;
+		int eggs = 3;
 		int[][] matrix = new int[eggs+1][floors+1];
 		for(int i = 1;i<=floors;i++)
 			matrix[1][i] = i;
