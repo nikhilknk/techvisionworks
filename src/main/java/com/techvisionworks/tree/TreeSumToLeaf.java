@@ -27,7 +27,7 @@ public class TreeSumToLeaf {
 		root.getRight().setRight(new TreeNode(7));
 
 		List<Integer> result = new ArrayList<>();
-		int sum = 12;
+		int sum = 11;
 		
 		recur(root,sum,result);
 		
@@ -53,13 +53,13 @@ public class TreeSumToLeaf {
 			}
 
 			if(root.getLeft() != null) {
-				ans=  ans || recur(root.getLeft(), sum-root.getValue(), result);
+				ans=  recur(root.getLeft(), sum-root.getValue(), result);
 				if(ans)
 					result.add(root.getValue());
 			}
 
 			if(root.getRight() != null) {
-				ans =  ans || recur(root.getRight(), sum-root.getValue(), result);
+				ans =  recur(root.getRight(), sum-root.getValue(), result);
 				if(ans)
 					result.add(root.getValue());
 			}
