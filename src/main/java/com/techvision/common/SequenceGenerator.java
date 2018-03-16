@@ -1,10 +1,6 @@
 package com.techvision.common;
 
 import java.util.Calendar;
-import java.util.TimeZone;
-
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
 
 public class SequenceGenerator {
 	public static void main(String[] args) throws Exception {
