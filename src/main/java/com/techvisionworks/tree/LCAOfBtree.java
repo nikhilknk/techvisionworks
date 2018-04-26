@@ -19,7 +19,8 @@ public class LCAOfBtree {
 		Set<Integer> topList = new HashSet<>();
 		printTopView(root, true, topList);
 		printTopView(root, false, topList);
-		System.out.println("LCA is "+ LCA(4,5,root));
+		topList.stream().forEach(System.out::println);
+		//System.out.println("LCA is "+ LCA(4,5,root));
 	}
 
 	private static int LCA(int i, int j,TreeNode root) {

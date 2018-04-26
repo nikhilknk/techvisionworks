@@ -37,8 +37,8 @@ public class LongestBSTInBinaryTree {
 		if(!leftMinMax.isBst() || !rightMinMax.isBst() || root.getValue() < leftMinMax.max || root.getValue() > rightMinMax.getMin())
 			return new MinMax(Math.max(leftMinMax.getSize(), rightMinMax.getSize()));
 		
-		int min = root.getLeft() == null ? leftMinMax.getMin() : root.getValue(); 
-		int max =  root.getRight() != null ? rightMinMax.min : root.getValue(); 
+		int min = root.getLeft() != null ? leftMinMax.getMin() : root.getValue(); 
+		int max =  root.getRight() != null ? rightMinMax.getMax() : root.getValue(); 
 		
 		return new MinMax(leftMinMax.getSize()+rightMinMax.getSize()+1,true,min,max );
 	}
