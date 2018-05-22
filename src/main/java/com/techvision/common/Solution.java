@@ -9,6 +9,10 @@ public class Solution {
 
     static int[] leftRotation(int[] a, int d) {
     	
+    	String s = "nikhil.aa";
+    	System.out.println(s.replace("aafa", ""));
+    	System.out.println(s.replace("nikhil.", ""));
+    	
     	int length = a.length;
         while(d>length)
         	d=d-length;
@@ -41,7 +45,7 @@ public class Solution {
         for(int a_i = 0; a_i < n; a_i++){
             a[a_i] = in.nextInt();
         }
-       
+       */
       
         for (int i = 0; i < result.length; i++) {
             System.out.print(result[i] + (i != result.length - 1 ? " " : ""));
@@ -49,6 +53,6 @@ public class Solution {
         System.out.println("");
 
 
-        in.close();
-    */}
+       // in.close();
+    }
 }

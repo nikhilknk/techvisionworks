@@ -36,7 +36,7 @@ public class ReverseKAlternatively {
 			prev = current;
 			current = next;
 		}
-		head.next = current;
+		head.next = prev;
 		for(int i = 0 ; i< k ; i++) {
 			current = current.next;
 		}

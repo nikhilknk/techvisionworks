@@ -13,7 +13,7 @@ public class LongestIncreasingSubSequence {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] input = {3,4,1,0,6,2,3};
+		int[] input = {3,4,-1,0,5,6,7,2,3};
 		int[] result = new int[input.length];
 		int[] indexes = new int[input.length];
 		

@@ -15,7 +15,7 @@ public class NextBigNumber {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int number = 51428;
+		int number = 518421;
 		char[] charArray = ("" + number).toCharArray();
 		int lastNum = charArray[charArray.length-1];
 		int d1Index = -1;

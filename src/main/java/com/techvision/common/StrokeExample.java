@@ -4,6 +4,7 @@
 package com.techvision.common;
 
 /**
+ * Horizontal and find Vertical
  * @author nkakki
  *
  */

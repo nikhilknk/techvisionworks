@@ -19,7 +19,7 @@ public class MostCommonNumber {
 		for(int i =0;i<num.length;i++) {
 			if(count==0) {
 				candidate = num[i];
-				count--;
+				count=1;
 			}else {
 				if(candidate == num[i])
 					count++;

@@ -24,8 +24,9 @@ public class ProbabilityKnightInsideChessBoard {
 		
 		for(int step = 1; step <= k;step++) {
 			for(int i = 0;i<N;i++) {
-				int prob = 0;
+
 				for(int j =0;j<N;j++) {
+					int prob = 0;
 					for(int pos =0;j<N;j++) {
 						int newX = i+dx[pos];
 						int newY = j+dy[pos];
