@@ -36,10 +36,26 @@ public class RotateSingleLinkedList {
 		System.out.println(head.getData());*/
 		
 		Node n = reverse(head);
+		while(n != null) {
 		System.out.println(n.getData());
+		n = n.getNext();	
+		}
 	}
 
 	private static Node reverse(Node head) {
+			Node prev = null;;
+			Node current = head;
+			Node next = null;
+			while(current != null) {
+				next = current.getNext();
+				current.setNext(prev);
+				prev = current;
+				current = next;
+			}
+		return prev;
+	}
+
+	/*private static Node reverse(Node head) {
 		
 		if(head.getNext() == null)
 			return head;
@@ -49,6 +65,6 @@ public class RotateSingleLinkedList {
 			temp.setNext(head);
 			
 			return temp;
-	}
+	}*/
 
 }
